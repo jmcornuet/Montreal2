@@ -1,0 +1,503 @@
+		#fieldmain {
+			width:300px;height:300px;
+			background:lime;
+			margin:0 auto;
+			margin-top:100px;
+			font-size:20px;
+  			border-radius:10%;
+  			border:2px solid black;
+		}
+		select {
+			font-size: 14px;
+		}
+    		#datedujour {
+                font-size: 16px;
+    		}
+			.liste, th, td {
+    			border: 1px solid black;
+				border-collapse: collapse; 
+    			font-size : 16px;
+    			font-variant : normal;
+			}
+			#divConteneur {
+				min-height:200px;
+				height:300px;
+				overflow:scroll;
+				font-style:normal;
+				text-align:center;
+			}
+           body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:0.9em;
+                margin:0 auto;
+            }
+			.defaut {
+				background-color: #0C0;
+				height: 15px;
+			}
+ 			.defaut:hover {
+    			background-color: #0F0;
+			}
+			.sans {
+				background-color: #BBB;
+				height: 15px;
+			}
+			.retard {
+				background-color: #F83106;
+			}
+			.retard:hover {
+				background-color: #F99890;
+			}
+			.emprunt {
+				background-color: #FFAF33
+			}
+			.emprunt:hover {
+				background-color: #F83106;
+			}
+			.selection {
+				background-color: #AAAADD;
+			}
+			td {
+				cursor: pointer;
+			}
+			.note {
+				float:right;
+				margin-right:20%;
+				font-size: 16px;
+				font-variant: normal;
+			}
+            #topPage {
+                font-size: 30px;
+				font-variant:small-caps;
+				text-align:center;
+            }
+            #maingauche {
+            	margin-top : 20px;
+            	width : 35%;
+            	height : 400px;
+				background-color : #FFAAFF;
+				font-size : 18px;            
+            	float :left;
+            	visibility:hidden;
+            }
+            #nouvelEmprunt {
+            	width : 40%;
+            	float:left;
+            }
+            #retourLivre {
+            	width : 40%;
+            	float:right;
+            }
+            #maindroite {
+            	margin-top : 20px;
+            	width : 64%;
+            	height : 400px;
+				background-color : #F0CAFE;
+				font-size : 18px;            
+            	float :right;
+            	visibility:hidden;
+            }
+            #fieldresultats {
+            	height : 368px;
+            }
+            #emprunteurs {
+            	margin-top : 20px;
+            	width : 35%;
+            	height : 300px;
+            	float :left;
+				background-color : #AAEEEE;
+				font-size : 18px;
+				visibility : hidden;
+			}
+            #livres {
+            	margin-top : 20px;
+            	width : 64%;
+            	height : 300px;
+            	float : right;
+            	background-color : #EEEEAA;
+				font-size : 18px;
+				visibility:hidden;
+            }
+            #valId {
+            	float : right;
+            	width : 250px;
+            }
+ 			#emprunt {
+            	float : right;
+            	width : 150px;
+			}
+ 			#rendu {
+            	float : right;
+            	width : 150px;			
+			}
+			#numLivre {
+				float : right;
+			}
+			#numEmprunteur {
+				float : right;
+			}
+           .bouton {
+				border: 1px solid #f44c0e;
+				color: #fff;
+				background: tomato;
+				padding: 10px 20px;
+				border-radius: 3px;
+				font-size : 18px;
+            }
+ 			.bouton:hover {
+    			background: #f44c0e;
+			}
+           .bouton2 {
+				border: 1px solid #000;
+				color: #fff;
+				background: #444;
+				padding: 10px 20px;
+				border-radius: 3px;
+				font-size : 18px;
+				margin:0 auto;
+            }
+ 			.bouton2:hover {
+ 				color: #000;
+    			background: #AAA;
+			}
+
+/*			.boutonimage {
+				border: 2px solid #000000;
+				float :right;
+				background: lime;
+				padding: 3px 3px 3px 3px;
+				border-radius : 3px
+				background-image : "balai.png";			
+			}
+			.boutonimage:hover {
+    			background: #f44c0e;			
+			} */
+			#sub1 {
+				font-size : 20px;
+			}
+			#sub2 {
+				font-size : 20px;
+			}
+			.legende {
+				font-size : 26px;
+			}
+			.legende2 {
+				font-size : 18px;
+				font-style:italic;
+				font-weight:bold
+			}
+			input[type=submit] {
+				border: 1px solid #f44c0e;
+				color: #fff;
+				background: tomato;
+				padding: 10px 20px;
+				border-radius: 3px;
+				font-size : 18px;
+			}
+			input[type=submit]:hover {
+    			background: #f44c0e;
+			}
+			input[type=image] {
+				border: 2px solid #000000;
+				float :right;
+				background: lime;
+				padding: 3px 3px 3px 3px;
+				border-radius : 3px
+			}
+			input[type=image]:hover {
+    			background: #f44c0e;
+			}
+			input[type=text] {
+				font-size : 14px;			
+			}
+			input:checked {
+				width : 20px;
+				height: 20px;
+			}
+			.log {
+				width:98%;
+			}
+			#bouton2 {
+				visibility:hidden;
+			}
+			#modifemp {
+				visibility:hidden;
+			}
+			#suppemp {
+				visibility:hidden;
+			}
+			#modiflivre {
+				visibility:hidden;
+			}
+			#supplivre {
+				visibility:hidden;
+			}
+			.dropbtn {
+				background-color:white;
+				color:black;
+				padding: 5px;
+				border: 2px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+			.dropbtn:hover, .dropbtn:focus {
+				background-color:lime;
+			}
+			.dropdown {
+				position: relative;
+				display: inline-block;
+				visibility: hidden;
+				float: right;
+			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				border-radius: 12px;
+				overflow: auto;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+			.dropdown-content a {
+				color: black;
+				padding: 12px;
+				text-decoration:none;
+				display: block;
+				font-size:16px;
+			}
+			.dropdown a:hover {
+				font-weight:bold;
+				color:green;
+			}
+			.show {
+				display:block;
+			}
+			#quitter a {
+				color:black;
+				font-size:18px;
+			}
+			#quitter a:hover {
+				font-weight:bold;
+				color:red;
+			}
+			#menugeneral {
+				/*margin-left: 15%;*/
+				font-size: 20px;
+			}
+			#navigation, #navigation ul {
+				padding: 40;
+				text-align:center;
+				list-style : none;
+				line-height:30px;
+			}
+			#navigation {
+				font-weight: bold;
+				font-family: Arial;
+				font-size: 20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#navigation a {
+				display:block;
+				padding: 0;
+				background : #a00;
+				color : #fff;
+				text-decoration: none;
+			}
+			#navigation li {
+				float : left;
+				border-right: 100px solid #fff;
+			}
+			html>body #navigation li {
+				border-right: 100px solid transparent;
+			}
+			#navigation li ul {
+				position: absolute;
+				width: 144px;
+				left: -999em;
+			}			
+			#navigation li ul li {
+				border-top: 5px solid #fff;
+			}
+			html>body #navigation li ul li {
+				border-top: 5px solid transparent;
+			}
+			#navigation li ul ul {
+				margin:-22px 0 0 144px;
+				border-left:1px solid #fff;
+			}
+			html>body #navigation li ul ul {
+				border-left: 1px solid transparent;
+			}
+			#navigation a:hover {
+				color: #0a0;
+				background:#fff;
+			}
+			#navigation li:hover ul {
+				left: -999em;
+			}
+			#navigation li:hover ul {
+				left:auto;
+				min-height:0;
+			}
+			.champemprunteurs {
+				font-size: 18px;
+				padding-top : 10px;
+				width: 650px;
+				margin: 0 auto;
+			}
+			.champmenu {
+				margin:0 auto;
+			}
+			.champlivres {
+				font-size: 18px;
+				width:900px;
+				margin:0 auto;
+			}
+			label {
+				display: block;
+				width: 130px;
+				float: left;
+			}
+			.titre1 {
+				font-size: 24px;
+				font-weight: bold;
+				margin:0 auto;
+			}
+			.resultat {
+				font-size: 20px;
+				text-align:left;
+			}
+			table {
+				margin: auto;
+			}
+			#sortie {
+				font-variant: normal;
+				font-size:14px;
+				text-align:left;
+			}
+			.alerte {
+				background: #ddd;
+				padding: 25px;
+				border: 3px solid #000;
+				border-radius:10px;
+				font-size: 18px;
+				width:200px;
+				text-align:center;
+				margin:0 auto;
+			}
+			ul.niveau1, ul.niveau1 ul {
+				margin-left:0;
+				margin-bottom: 0;
+				margin-top:0;
+				padding:0;
+				list-style-type: none;
+				float:left;
+				border: 1px solid #486B02;
+				background-color: #00a9d4;
+			}
+			ul.niveau1 li {
+				float:left;
+				width: 9em;
+				background-color: #00a9d4;
+			}
+			ul.niveau1 li ul {
+				width: 9em;
+				position: absolute;
+				left: -999em;
+			}
+			.niveau1 li:hover ul {
+				left:auto;
+			}
+			ul.niveau1 a {
+				display:block;
+				color:#2B3F00;
+				text-decoration: none;
+				padding: 0.3em 1em;
+				border-right: 1px solid #486B02;
+				border-left: 1px solid #E4FFD3;
+			}
+			ul.niveau1 li li a {
+				border-top: 1px solid #E4FFD3;
+				border-bottom: 1px solid #00a9d4;
+				border-left: 0;
+				border-right: 0;
+			}
+			ul.niveau1 li:last-child a {
+				border-right: 0;
+				border-bottom: 0;				
+			}
+			ul a:hover, ul a focus {
+				color: #E4FFD3;
+				background-color: #00a9d4;
+			}
+			span.titre {
+				font-size: 16px;
+				font-variant: normal;
+				font-style:italic;
+			}
+			span.auteurs {
+				font-size: 16px;
+				font-variant: normal;
+				font-style: bold;
+			}
+			span.datemprunt {
+				font-size: 16px;
+				font-variant: normal;
+			}
+			.saisie th,td {
+				border:0;
+				height:20px;
+				padding:10px;
+			}
+			.saisie td {
+				text-align:left;
+			}
+			.emprunteur th,td {
+				border:0;
+				height:20px;
+				padding:0;
+			}
+			.emprunteur td {
+				text-align:left;
+			}
+			.fiche {
+				margin:30px;
+			}
+			.fiche td {
+				border:10px;
+				height:25px;
+				padding:10px;
+				text-align:left;
+			}
+			.entete {
+				font-variant: normal;
+				font-size: 16px;
+				margin:0 auto;
+				padding:20px;
+				text-align:center;
+			}
+			.imprim1 {
+				font-variant: normal;
+				font-size: 20px;
+			}
+			.imprim2 {
+				font-variant: small-caps;
+				font-size: 30px;
+			}
+			.fichinput {
+				background-color: pink;
+			}
+			.activite {
+				border-style: solid;
+    			border-color: red;
+			}
+			.tablepart{
+				border-collapse:collapse;				
+			}
+			.tablepart td {
+			    padding-left: 20px;
+			    padding-right: 20px;
+				border: 1px solid black;
+				text-align:left;
+			}
