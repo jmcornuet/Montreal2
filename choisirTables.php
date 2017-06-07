@@ -36,6 +36,7 @@
 		$optionstableAd = putSelected($optionstable,$tadh);
 		$optionstableAn = putSelected($optionstable,$tani);
 		$optionstableAc = putSelected($optionstable,$tact);
+		$optionstableCh = putSelected($optionstable,$tcheq);
 
 	?>
 	<div class="titre1" style="text-align:center">Choix des tables de la base de données</span></div>
@@ -58,6 +59,11 @@
 						<td>Table des Animateurs</td>
 						<td>&nbsp;&nbsp;</td>
 						<td><select name="tanimateur" ><?php echo $optionstableAn ?></select></td>
+					<tr>
+					<tr>
+						<td>Table des Chèques</td>
+						<td>&nbsp;&nbsp;</td>
+						<td><select name="tcheque" ><?php echo $optionstableCh ?></select></td>
 					<tr>
 				</table>
 				<br>

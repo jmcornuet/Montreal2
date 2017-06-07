@@ -31,6 +31,7 @@
 		$saison1 = $annee1."-".$annee2;
 		$ntable = array();
 		for ($i=0;$i<count($nomtable);$i++) {
+			if (strstr($nomtable[$i],"cheq")) array_push($ntable,"cheq".$annee1);
 			if ((strstr($nomtable[$i],"tadh")) && (strlen($nomtable[$i])==8)) array_push($ntable,"tadh".$annee1);
 			if (strstr($nomtable[$i],"tanimateurs")) array_push($ntable,"tanimateurs".$annee1);
 			if (strstr($nomtable[$i],"tgract")) array_push($ntable,"tgract".$annee1);
@@ -43,27 +44,32 @@
 			<form action="creerTables.php" method="post">
 				<table class="saisie">
 					<tr>
-						<td>Mise à zéro de la table des adhérents : </td>
+						<td>Nom de la nouvelle table des chèques : </td>
 						<td>&nbsp;&nbsp;</td>
-						<td><input name="razadh" type="checkbox" value="raz"></td>
+						<td><input name="ntche" type="text" size=20 value="<?php echo $ntable[0] ?>"></td>
 					</tr>
 					<tr><td></td><td></td><td></td></tr>
 					<tr>
 						<td>Nom de la nouvelle table des adhérents : </td>
 						<td>&nbsp;&nbsp;</td>
-						<td><input name="ntadh" type="text" size=20 value="<?php echo $ntable[0] ?>"></td>
+						<td><input name="ntadh" type="text" size=20 value="<?php echo $ntable[1] ?>"></td>
+					<tr>
+						<td>Mise à zéro de la table des adhérents : </td>
+						<td>&nbsp;&nbsp;</td>
+						<td><input name="razadh" type="checkbox" value="raz"></td>
+					</tr>
 					</tr>
 					<tr><td></td><td></td><td></td></tr>
 					<tr>
 						<td>Nom de la nouvelle table des animateurs : </td>
 						<td>&nbsp;&nbsp;</td>
-						<td><input name="ntani" type="text" size=20 value="<?php echo $ntable[1] ?>"></td>
+						<td><input name="ntani" type="text" size=20 value="<?php echo $ntable[2] ?>"></td>
 					</tr>
 					<tr><td></td><td></td><td></td></tr>
 					<tr>
 						<td>Nom de la nouvelle table des activités : </td>
 						<td>&nbsp;&nbsp;</td>
-						<td><input name="ntgra" type="text" size=20 value="<?php echo $ntable[2] ?>"></td>
+						<td><input name="ntgra" type="text" size=20 value="<?php echo $ntable[3] ?>"></td>
 					</tr>
 				</table>
 				<br>

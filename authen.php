@@ -39,6 +39,7 @@ if ($login!="" AND $pass!="") {
 					case "adh" : $_SESSION['tadh'] = $b[1];break;
 					case "ani" : $_SESSION['tani'] = $b[1];break;
 					case "act" : $_SESSION['tact'] = $b[1];break;
+					case "che" : $_SESSION['cheq'] = $b[1];break;
 				}
 			} 
 			fclose($ff);		

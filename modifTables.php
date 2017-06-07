@@ -18,14 +18,17 @@
 		$tadh=$_POST['tadherent'];//echo $tadh."<br>";
 		$tani=$_POST['tanimateur'];//echo $tani."<br>";
 		$tact=$_POST['tactivite'];//echo $tact."<br>";
+		$tcheq=$_POST['tcheque'];
 		$_SESSION['tadh'] = $tadh;
 		$_SESSION['tani'] = $tani;
 		$_SESSION['tact'] = $tact;
+		$_SESSION['tcheq'] = $tcheq;
 		$ff = fopen("../conf/tables.conf","w");
 		if ($ff) {
 			fwrite($ff,"adh=".$tadh."\n");
 			fwrite($ff,"ani=".$tani."\n");
 			fwrite($ff,"act=".$tact."\n");
+			fwrite($ff,"che=".$tcheq."\n");
 			echo "</br></br><div class='alerte'>Les tables ont bien été modifiées</div>";
 		} else echo "</br></br><div class='alerte'>Les tables n'ont pas pu être modifiées !!!</div>";
 		fclose($ff);

@@ -36,8 +36,8 @@ function resizemenu() {
 		var j=Math.floor((w-800)/20);
 		if (j<0) j=0;
 		if (j>24) j=24;
-		var ml=Math.floor((w-4*wl[j])/2);
-		//console.log="  largeur = "+w+"  j="+j+"  marge gauche = "+ml;
+		var ml=Math.floor((w-5*wl[j])/2);
+		console.log="  largeur = "+w+"  j="+j+"  marge gauche = "+ml;
 		//window.document.getElementById("log").innerHTML="  largeur = "+w+"  j="+j+"  marge gauche = "+ml;
 		var elem1 = window.document.querySelectorAll('ul.niveau1 li');
 		for (var i=0;i<elem1.length;i++) 

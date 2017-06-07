@@ -36,6 +36,12 @@
 			</ul>
 		</li>
 		<li>
+			<a href="#">Comptabilité</a>
+			<ul>
+				<li><a href="bordereau.php">Bordereau</a></li>
+			</ul>
+		</li>
+		<li>
 			<a href="quitter.php">Quitter</a>
 		</li>
 	</ul>

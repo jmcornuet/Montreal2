@@ -398,11 +398,11 @@
 			}
 			ul.niveau1 li {
 				float:left;
-				width: 9em;
+				width: 7em;
 				background-color: #00a9d4;
 			}
 			ul.niveau1 li ul {
-				width: 9em;
+				width: 7em;
 				position: absolute;
 				left: -999em;
 			}

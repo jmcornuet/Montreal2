@@ -72,18 +72,29 @@
 		if ($reponse) echo "</br><div class='alerte'>La table $ntable a bien été créée et copiée</div>";
 		else echo "</br></br><div class='alerte'>ATTENTION La table $ntable n'a pas pu être copiée (elle est vide)</div>";
 	}
+	//création d'une nouvelle table des chèques
+	$tcheerr=false;
+	$ntable = $_POST['ntche'];
+	$sql = "CREATE TABLE $ntable LIKE $tcheq";
+	$reponse = $M->querydb($sql);
+	if ($reponse) echo "</br><div class='alerte'>La table $ntable a bien été créée et copiée</div>";
+	else {echo "</br><div class='alerte'>ATTENTION Impossible de créer la table $ntable</div>";$tcheerr=true;}
+
 
 	if (!$tadherr) $tadh = $_POST['ntadh'];
 	if (!$tanierr) $tani = $_POST['ntani'];
 	if (!$tacterr) $tact = $_POST['ntgra'];
+	if (!$tcheerr) $tcheq = $_POST['ntche'];
 	$_SESSION['tadh'] = $tadh;
 	$_SESSION['tani'] = $tani;
 	$_SESSION['tact'] = $tact;
+	$_SESSION['cheq'] = $tcheq;
 	$ff = fopen("../conf/tables.conf","w");
 	if ($ff) {
 		fwrite($ff,"adh=".$tadh."\n");
 		fwrite($ff,"ani=".$tani."\n");
 		fwrite($ff,"act=".$tact."\n");
+		fwrite($ff,"che=".$tcheq."\n");
 //		echo "</br><div class='alerte'>Les tables ont bien été modifiées</div>";
 	} else echo "</br><div class='alerte'>Les tables n'ont pas pu être modifiées !!!</div>";
 	fclose($ff);
