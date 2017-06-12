@@ -80,6 +80,7 @@
 				    		formulaire.appendChild(input4);
 					   		document.body.appendChild(formulaire);
 				    		formulaire.submit();
+				    		setTimeout(function(){document.location.reload();},3000);
 			        	}
 			        }
 			    });
